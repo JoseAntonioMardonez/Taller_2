@@ -20,22 +20,16 @@ public class GestorPersonal {
         System.out.println("Persona agregada.");
     }
     public void agregarAutomovil(Automovil automovil, Persona persona){
-        String rut = persona.getRut();
-        for(Persona persona : this.personas){
-            if(persona.getRut().equals(rut)){
-
-                return;
-            }
-        }
 
     }
-    public void agregarCorreo(){
+    public void agregarCorreo(CorreoElectronico correo, Persona persona){
 
     }
-    public void obtenerPersonasPorMarcaAutomovil(){
+    public void obtenerPersonasPorMarcaAutomovil(ArrayList personas, String marca){
+
 
     }
-    public void obtenerPersonasPorNombre(){
+    public void obtenerPersonasPorNombre(ArrayList personas, String nombre){
 
     }
     public void buscarPersonaPorRUT(String rut){
