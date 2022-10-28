@@ -3,7 +3,8 @@ public class CorreoElectronico {
 	private String proveedorCorreo;
 
 	public CorreoElectronico(String direccionCorreo, String proveedorCorreo) {
-		throw new UnsupportedOperationException();
+		this.direccionCorreo = direccionCorreo;
+		this.proveedorCorreo = proveedorCorreo;
 	}
 
 	public String getDireccionCorreo() {
@@ -20,5 +21,8 @@ public class CorreoElectronico {
 
 	public void setProveedorCorreo(String proveedorCorreo) {
 		this.proveedorCorreo = proveedorCorreo;
+	}
+	public String toString(){
+		return "Correo Electrónico: "+direccionCorreo+"\n "+"Proveedor de Correo Electrónico: "+proveedorCorreo;
 	}
 }

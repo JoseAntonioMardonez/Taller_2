@@ -3,7 +3,8 @@ public class Chasis {
 	private String tipoMaterial;
 
 	public Chasis(int numeroChasis, String tipoMaterial) {
-		throw new UnsupportedOperationException();
+		this.numeroChasis = numeroChasis;
+		this.tipoMaterial = tipoMaterial;
 	}
 
 	public int getNumeroChasis() {
@@ -20,5 +21,8 @@ public class Chasis {
 
 	public void setTipoMaterial(String tipoMaterial) {
 		this.tipoMaterial = tipoMaterial;
+	}
+	public String toString(){
+		return "N° de Chasis: "+numeroChasis+"\n "+"Tipo de Material: "+tipoMaterial;
 	}
 }

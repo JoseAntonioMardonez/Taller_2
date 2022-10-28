@@ -7,12 +7,14 @@ public class Persona {
 	private String rut;
 	private ArrayList<CorreoElectronico> correos = new ArrayList<CorreoElectronico>();
 	private ArrayList<Automovil> automoviles = new ArrayList<Automovil>();
-
 	//Constructor
 	public Persona(String nombre, String apellido, String rut) {
-		throw new UnsupportedOperationException();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.rut = rut;
+		this.correos = new ArrayList<CorreoElectronico>();
+		this.automoviles = new ArrayList<Automovil>();
 	}
-
 	//Métodos
 	public String getNombre() {
 		return this.nombre;
@@ -36,5 +38,8 @@ public class Persona {
 
 	public void setRut(String rut) {
 		this.rut = rut;
+	}
+	public String toString(){
+		return "Nombre: "+nombre+" "+apellido+"\n "+" RUT: "+rut;
 	}
 }

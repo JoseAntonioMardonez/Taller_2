@@ -2,8 +2,9 @@ public class Motor {
 	private int numeroMotor;
 	private int centimetrosCubicos;
 
-	public Motor(String numeroMotor, int centimetrosCubicos) {
-		throw new UnsupportedOperationException();
+	public Motor(int numeroMotor, int centimetrosCubicos) {
+		this.numeroMotor = numeroMotor;
+		this.centimetrosCubicos = centimetrosCubicos;
 	}
 
 	public int getNumeroMotor() {
@@ -20,5 +21,8 @@ public class Motor {
 
 	public void setCentimetrosCubicos(int centimetrosCubicos) {
 		this.centimetrosCubicos = centimetrosCubicos;
+	}
+	public String toString(){
+		return "N° de Motor: "+numeroMotor+"\n "+"Centimetros cúbicos: "+centimetrosCubicos;
 	}
 }

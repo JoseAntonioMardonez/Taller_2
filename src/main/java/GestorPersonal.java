@@ -1,18 +1,32 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class GestorPersonal {
     //Atributos
-    private List<Persona> personas;
+    private ArrayList<Persona> personas;
     //Constructor
     public GestorPersonal(){
         this.personas = new ArrayList<Persona>();
     }
     //Métodos
-    public void agregarPersona(Persona persona){
-        this.personas.add(persona);
+    public void agregarPersona(Persona personanueva){
+        String rut = personanueva.getRut();
+        for(Persona persona : this.personas){
+            if(persona.getRut().equals(rut)){
+                System.out.println("El RUT ya existe.");
+                return;
+            }
+        }
+        this.personas.add(personanueva);
+        System.out.println("Persona agregada.");
     }
-    public void agregarAutomovil(){
+    public void agregarAutomovil(Automovil automovil, Persona persona){
+        String rut = persona.getRut();
+        for(Persona persona : this.personas){
+            if(persona.getRut().equals(rut)){
+
+                return;
+            }
+        }
 
     }
     public void agregarCorreo(){

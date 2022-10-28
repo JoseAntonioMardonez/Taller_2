@@ -1,15 +1,21 @@
 public class Automovil {
+	//Atributos
 	private String marca;
 	private String modelo;
 	private int anioFabricacion;
 	private int precio;
-	public Motor motor;
-	public Chasis chasis;
-
-	public Automovil(String marca, String modelo, int anioFabricacion, int precio) {
-		throw new UnsupportedOperationException();
+	private Motor motor;
+	private Chasis chasis;
+	//Constructor
+	public Automovil(String marca, String modelo, int anioFabricacion, int precio, Motor motor, Chasis chasis) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.anioFabricacion = anioFabricacion;
+		this.precio = precio;
+		this.motor = motor;
+		this.chasis = chasis;
 	}
-
+	//Métodos
 	public String getMarca() {
 		return this.marca;
 	}
@@ -40,5 +46,8 @@ public class Automovil {
 
 	public void setPrecio(int precio) {
 		this.precio = precio;
+	}
+	public String toString(){
+		return "Marca: "+marca+"\n "+"Modelo: "+modelo+"\n "+"Año de Fabricación: "+anioFabricacion+"\n "+"Precio: "+precio;
 	}
 }
